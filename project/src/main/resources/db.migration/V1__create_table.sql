@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS `purchase`
+CREATE TABLE IF NOT EXISTS `purchase` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `msisdn` LONG NOT NULL,
+  `action` ENUM NOT NULL,
+  `timestamp` TIMESTAMP NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+DROP TABLE IF EXISTS `subscription`
+CREATE TABLE IF NOT EXISTS `subscription` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `msisdn` LONG NOT NULL,
+  `action` ENUM NOT NULL,
+  `timestamp` TIMESTAMP NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
